@@ -1,38 +1,92 @@
-.container .box p{
-    padding: 20px;
-    border: 2px solid;
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
-
-.section .content >p{
-    margin: 15px;
-    border: 2px solid;
-}
-
-.card-header + .card-body p {
-    border: 2px solid red;
-}
-
-.navbar {
-    background-color:lightblue;
-}
-
-.header h1 .sub-header p {
-    margin-top: 20px;
-}
-.footer span {
+.container{
+    background-color: black;
     padding: 10px;
-    border: 2px solid;
 }
-.main-content .content p {
-    border: 1px solid black;
+.header{
+    display: flex;
+    justify-content:start ;
+    color: aliceblue;
+    position: absolute;
+    gap: 20px;
 }
-.nav ul li{
-   margin-right: 15px; 
-   border: 2px solid;
+.item{
+display: flex;
+color: aliceblue;
+align-items: center;
+justify-content: end;
+position: relative;
+right: 2px;
 }
-.gallery .photo {
-    background-color: lightgrey;
+/* task-2*/
+.task2{
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
 }
-.footer span {
-    border-radius: 5px;
+i{
+    color: aliceblue;
 }
+.bi bi-box-arrow-in-up{
+    color: green;
+}
+
+/*task3*/
+.task3{
+    background-color: black;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    color: aliceblue;
+    justify-content: space-between;
+}
+.image{
+    position: relative;
+    box-sizing: border-box;
+    
+}
+h1{
+    top: 300px;
+    left: 550px;
+    color: white;
+    position: absolute;
+}
+hr{
+    border: 1px solid white ; width: 250px; 
+    top: 350px;
+    position: absolute;
+    left: 550px;
+}
+h3{
+    top:5px;
+    left:5px;
+    color: white;
+    position: absolute; 
+}
+a{
+    bottom:10px;
+    left:110px;
+    color: white;
+    position: absolute; 
+}
+p{
+    bottom:10px;
+    left:35px;
+    color: white;
+    position: absolute;  
+}
+h4{
+    bottom: 120px;
+    left: 630px;
+    color: white;
+    position: absolute;
+}
+
+
