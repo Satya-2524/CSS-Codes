@@ -1,87 +1,55 @@
-.outer-box{
-    width: 500px;
-    height: 500px;
-    border: 2px solid black;
-    position: relative;
-    padding: 10px;
+*{
+    margin: 0px;
+    padding:0px;
+    
 }
-.inner-box{
-    width: 250px;
-    height: 250px;
-    border: 2px solid palevioletred;
+.container{
+    width:100%;
+    height:650px;
+    /* border:2px solid black; */
+    display: flex;
+    flex-wrap:wrap ;
+    flex-grow: 1;
+    flex-shrink: 0;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-around;
+   font-weight: bold;
+}
+.item{
+ /* border: 3px solid black; */
+ width:300px;
+ height:250px;
+ margin: 10px;
+ position: relative;
+}
+img{
+object-fit: cover;
+width: 100%;
+height:100%;
+}
+p{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     position: absolute;
-    top: 125px;
-    right: 125px;
-    padding: 10px;
-    
+    font-size: 30px;
+    opacity:0;
+    font: weight 900px;
+    transition: 0.5s ease, background-color o.5s ease ;
+    text-align: center;
 }
-.card{
-    width: 500px;
-    height: 500px;
-    border: 2px solid black;
-    position: relative;
-    
-}
-.icon{
-    width: 250px;
-    height: 250px;
-    border: 2px solid green;
-    position:absolute;
-    bottom:0px;
-    right:0px;
-  
-}
-.tooltip-container{
-    width: 250px;
-    height: 250px;
-    border: 2px solid black;
-    position: relative;
-    
+.item:hover>p{
+    opacity: 1;
+    color:white;
+    background-color: black;
+    width:300px;
+    height:250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button{
-    left: 120px;
-    top: 100px;
-    border: 2px solid black;
-    position:relative;
-    
-}
-.tooltip{
-    left: 120px;
-    top: 70px;
-    position:absolute;
-    
-}
-.avatar-container{
-    width: 500px;
-    height: 500px;
-    border: 2px solid black;
-    position: relative; 
-    padding: 2px;  
-}
-.badge{
-    position:absolute; 
-    top: 0px; 
-    right: 0px; 
-}
-.avatar{
-     width: 250px;
-     height: 250px;
-    position:absolute;
-    top: 0px;
-    right: 0px;      
-}
-.image-container{
-    width: 500px;
-    height: 500px;
-    border: 2px solid black;
-    position: relative; 
-    padding: 20px;  
-}
 
-.overlay{
-    position:absolute;
-    top: 100px;
-    height:100px;
-    right: 40px;
-}
+
+
